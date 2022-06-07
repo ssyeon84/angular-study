@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',
@@ -14,9 +13,8 @@ export class ButtonsComponent implements OnInit {
   ngOnInit(): void {
   }
 
- 
-  start() {
-    this.clickEvent.emit('change!');
+  executeButton(command: string) {
+    this.clickEvent.emit(command);
   }
 
 }
