@@ -1,3 +1,4 @@
+import { PageToggleService } from 'src/app/share/page-toggle.service';
 import { StopwatchComponent } from './stopwatch/stopwatch.component';
 import { RouterModule, Routes } from '@angular/router';
 import { StopwatchModule } from './stopwatch/stopwatch.module';
@@ -24,12 +25,15 @@ const routes : Routes = [
   ],
   exports: [
     SectionComponent,
-    RouterModule
+    // RouterModule
   ],
   imports: [
     CommonModule,
     StopwatchModule,
     RouterModule.forChild(routes)
+  ],
+  providers: [
+    PageToggleService
   ]
 })
 export class SectionModule { }

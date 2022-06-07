@@ -1,3 +1,4 @@
+import { PageToggleService } from './../../share/page-toggle.service';
 import { RouterModule } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { TimeDisplayComponent } from './time-display/time-display.component';
